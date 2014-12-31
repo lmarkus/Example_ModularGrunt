@@ -1,0 +1,14 @@
+{
+  "name": "multigrunt",
+  "version": "1.0.0",
+  "description": "Modular Gruntfile demo repo",
+  "main": "",
+  "scripts": {},
+  "author": "@lmarkus",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "jshint": "^2.5.11"
+  }
+}

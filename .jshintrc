@@ -1,0 +1,9 @@
+{
+
+  "maxerr" : 50, // {int} Maximum error before stopping
+  // Enforcing
+  "quotmark" : true, // Quotation mark consistency:
+  "strict" : true,
+  "node" : true
+
+}
