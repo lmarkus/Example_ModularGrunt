@@ -9,8 +9,29 @@ module.exports = function (grunt) {
                     jshintrc: '.jshintrc'
                 }
             }
+        },
+        'bower-install-simple': {
+
+            options: {
+                color: true,
+                cwd: __dirname + '/'
+            },
+            'prod': {
+                options: {
+                    production: true
+                }
+            },
+            'dev': {
+                options: {
+                    production: false
+                }
+            }
+
         }
+
     });
 
-    grunt.registerTask('build:client', ['jshint:client']);
+    grunt.loadNpmTasks('grunt-bower-install-simple');
+    grunt.registerTask('bower-install:client', ['bower-install-simple:prod']);
+    grunt.registerTask('build:client', ['bower-install:client', 'jshint:client']);
 };
